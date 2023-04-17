@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS in HTML</title>
+        <meta charset="utf-8">
+        <!-- cách 1 -->
+        <!-- <style>
+            #topic{
+                color: red;
+                /* font-size: 33px; */
+            }
+        </style> -->
+        <!-- cách 2 -->
+        <link rel="stylesheet" href="main.css">
+        <!-- cách 3 -->
+        <!-- <h1 color ="red"></h1> -->
+    </head>
+    <body>
+        <div>
+            <i id="chu">Lập Trình</i>
+            <i id="chu"> HTML </i>
+        </div>
+                
+        <div>
+            <p id="luocxem">👁 997</p>
+        </div>
+        <div>
+            <h1 id="topic">Các Cách Sử Dụng CSS trong HTML??</h1>
+            <b style="font-size: 20px">Có 3 cách sau: </b>
+            <ul>
+                <li>Internal</li>
+                <li>External</li>
+                <li>Inline</li>
+            </ul>
+            <h3>1. Internal</h3>
+            <p>Trong CSS, "internal" được sử dụng để chỉ định các kiểu dáng nội bộ cho một trang web. Khi sử dụng phương thức này, các kiểu được đặt trong thẻ style bởi 2 dấu <> trong phần đầu của trang HTML. Ví dụ:</p>
+            <img src="style.png" alt="ảnh minh họa">
+            <p>Ở đây, kiểu cho tiêu đề h1 được đặt là màu xanh và kiểu cho đoạn văn bản p được đặt là kích thước chữ 16px. Các kiểu này chỉ áp dụng cho trang web hiện tại.</p>
+            <h3>2. External</h3>
+            <p>Trong HTML, thuộc tính "external" được sử dụng để liên kết đến một tệp CSS bên ngoài. Cách sử dụng là:</p>
+            <img src="external.png" alt="ảnh minh họa">
+            <p>Trong đó, href là đường dẫn tới tệp CSS bên ngoài.</p>
+            <p>Trường hợp này thường được sử dụng khi bạn muốn tái sử dụng các quy tắc CSS trên nhiều trang web khác nhau hoặc muốn giữ mã HTML và CSS riêng biệt cho dễ bảo trì.</p>
+            <p>Trong CSS, một tệp CSS bên ngoài có thể được áp dụng bằng cách sử dụng @import rule trong tệp CSS hiện tại. Ví dụ:</p>
+            <img src="external1.png" alt="ảnh minh họa">
+            <p>Nhưng cách sử dụng này không được khuyến khích, vì nó có thể ảnh hưởng đến tốc độ tải của trang web. Thay vào đó, nên sử dụng phương pháp "external" đã được đề cập ở trên.</p>
+            <h3>3. Inline</h3>
+            <p>Inline CSS là cách để bao gồm các quy tắc kiểu trực tiếp trong một thẻ HTML. Điều này có nghĩa là, chúng ta sẽ không định nghĩa kiểu trong một tệp CSS riêng biệt, mà sử dụng thuộc tính "style" để định nghĩa kiểu trực tiếp trong thẻ HTML.</p>
+            <p>Ví dụ, để đặt màu văn bản thành màu đỏ trong một thẻ div, bạn có thể sử dụng inline CSS như sau:</p>
+            <img src="Inline.png" alt="ảnh minh họa">
+            <p>Inline HTML là cách để bao gồm mã HTML trực tiếp vào trong một thẻ khác. Ví dụ, bạn có thể sử dụng inline HTML để chèn một hình ảnh vào trong một thẻ div như sau:</p>
+            <img src="inline1.png" alt="ảnh minh họa">
+            <p>Trong cả hai trường hợp, sử dụng inline kiểu và HTML sẽ giúp dễ dàng điều chỉnh nhanh chóng, tuy nhiên, khi phải áp dụng cho nhiều thẻ hoặc nhiều trang web, nó không được khuyến khích sử dụng bởi nó làm giảm khả năng tái sử dụng mã và làm tăng kích thước của trang web.</p>
+            <h3>Kết Luận:</h3>
+            <p>Vì các phương pháp này có những ưu điểm và hạn chế riêng, do đó, việc lựa chọn sử dụng <b id="mau">internal, external</b> hay <b id="mau">inline CSS</b> phụ thuộc vào nhu cầu và yêu cầu của từng trang web cụ thể.</p>
+            <p><b id="mau">Internal CSS</b> là phù hợp cho các trang web nhỏ hoặc chỉ gồm một số trang. Nó có thể giúp tăng tốc độ tải trang vì không cần tải thêm một tệp CSS bên ngoài, nhưng lại khó quản lý khi có quá nhiều kiểu được định nghĩa.</p>
+            <p><b id="mau">External CSS</b> là phù hợp cho các trang web lớn hoặc có nhiều trang. Nó giúp quản lý kiểu dễ dàng và có thể tái sử dụng mã CSS ở nhiều trang khác nhau. Tuy nhiên, việc tải tệp CSS bên ngoài có thể làm giảm tốc độ tải trang nếu tệp CSS quá lớn hoặc máy chủ chậm.</p>
+            <p><b id="mau">Inline CSS</b> là phù hợp cho các trang web có ít kiểu và cần điều chỉnh nhanh chóng. Tuy nhiên, nó làm tăng kích thước của trang web và làm giảm tính tái sử dụng mã CSS. Do đó, nó không được khuyến khích sử dụng trong các trang web lớn hoặc có nhiều trang.</p>
+            
+        </table>
+        <h3>Đánh Giá Về Bài Viết Của Chúng Tôi</h3>
+        <b>
+            Tốt😍
+            <input name="danhgia" type="radio">
+            Khá😐
+            <input name="danhgia" type="radio">
+            Tệ😡
+            <input name="danhgia" type="radio">
+        </b>
+        <br><br>
+        <input type="text">
+        <!-- <button>Gửi</button> -->
+        <input type="button" value=" Gửi">
+        <b><h4>cảm ơn quý khách đã đọc bài viết 💕 </h4></b>
+        </div>  
+    </body>
+</html>
